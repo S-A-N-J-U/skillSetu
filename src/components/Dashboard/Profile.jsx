@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 const DEFAULT_PROFILE = {
   name: 'Sanju',
   title: 'Full Stack Developer',
-  email: 'alex.morgan@example.com',
+  email: 'sanju@example.com',
   phone: '+1 (555) 234-5678',
   location: 'San Francisco, CA',
   bio: 'Passionate software engineer focused on building clean, performant web applications with React and Node.js.',
@@ -93,8 +93,8 @@ export default function UserProfile() {
       )}
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        
-        {/* Left Column: Avatar & Quick Stats */}
+
+
         <div className="lg:col-span-1">
           <div className="bg-white p-6 rounded-2xl border border-gray-200/80 shadow-sm flex flex-col items-center text-center">
             <div className="relative group mb-4">
@@ -137,10 +137,10 @@ export default function UserProfile() {
           </div>
         </div>
 
-        {/* Right Column: User Details & Edit Form */}
+
         <div className="lg:col-span-2">
           <div className="bg-white p-6 md:p-8 rounded-2xl border border-gray-200/80 shadow-sm">
-            
+
             <div className="flex justify-between items-center mb-6 border-b pb-4 border-gray-100">
               <h1 className="text-xl font-bold text-gray-900">
                 {isEditing ? 'Edit Profile Details' : 'Profile Details'}

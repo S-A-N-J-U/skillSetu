@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-// FAQ Content Data
+
 const FAQ_DATA = [
   {
     id: 1,
@@ -26,7 +26,7 @@ const FAQ_DATA = [
 ];
 
 function FAQ() {
-  // State to track which item is open (null = all closed)
+
   const [openId, setOpenId] = useState(null);
 
   const toggleFAQ = (id) => {
@@ -35,7 +35,7 @@ function FAQ() {
 
   return (
     <section className="py-16 px-4 max-w-4xl mx-auto">
-      {/* Section Header */}
+      
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 tracking-tight mb-3">
           Frequently Asked Questions
@@ -45,7 +45,7 @@ function FAQ() {
         </p>
       </div>
 
-      {/* Accordion List */}
+      
       <div className="space-y-4">
         {FAQ_DATA.map((faq) => {
           const isOpen = openId === faq.id;
@@ -64,7 +64,7 @@ function FAQ() {
                   {faq.question}
                 </span>
 
-                {/* Animated Chevron Icon */}
+              
                 <motion.span
                   animate={{ rotate: isOpen ? 180 : 0 }}
                   transition={{ duration: 0.3, ease: "easeInOut" }}
@@ -86,7 +86,7 @@ function FAQ() {
                 </motion.span>
               </button>
 
-              {/* Animated Expandable Answer */}
+            
               <AnimatePresence initial={false}>
                 {isOpen && (
                   <motion.div
