@@ -14,6 +14,7 @@ import Dash from './pages/Dash.jsx'
 import Post from "./pages/Post.jsx";
 
 import AllPosts from "./pages/AllPosts.jsx";
+import FindJob from './pages/FindJob.jsx'
 
 const router = createBrowserRouter([
     {
@@ -38,6 +39,15 @@ const router = createBrowserRouter([
                     <AuthLayout authentication>
                         {" "}
                         <Dash/>
+                    </AuthLayout>
+                ),
+            },
+            {
+                path: "/findjob",
+                element: (
+                    <AuthLayout authentication>
+                        {" "}
+                       <FindJob/>
                     </AuthLayout>
                 ),
             },

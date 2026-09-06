@@ -4,6 +4,7 @@ import ScoreGauge from '@/components/Dashboard/ScoreGauge';
 
 import RightDashboard from '@/components/Dashboard/RightDashboard';
 import { ChartBarMultiple } from '@/components/Dashboard/ChartBarMultiple';
+import Project from '@/components/Dashboard/Project';
 
 function Dash() {
   return (
@@ -36,6 +37,8 @@ function Dash() {
 
 
         <ChartBarMultiple/>
+
+        <Project/>
 
 
 

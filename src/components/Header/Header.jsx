@@ -97,6 +97,11 @@ function Header() {
       active: authStatus,
     },
     {
+      name: 'Find Job',
+      slug: '/findjob',
+      active: authStatus,
+    },
+    {
       name: 'Login',
       slug: '/login',
       active: !authStatus,
