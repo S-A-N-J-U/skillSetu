@@ -88,20 +88,19 @@ export class AuthService {
             );
 
             if (userAccount) {
-                // Automatically log in after account creation
                 return await this.login({ email, password });
             } else {
                 return userAccount;
             }
         } catch (error) {
-            console.error("Appwrite service :: createAccount :: error", error);
+            console.error("createAccount :: error", error);
             throw error;
         }
     }
 
     async login({ email, password }) {
         try {
-            // Check method availability for backward/forward SDK compatibility
+        
             if (typeof this.account.createEmailPasswordSession === 'function') {
                 return await this.account.createEmailPasswordSession(email, password);
             } else if (typeof this.account.createEmailSession === 'function') {
@@ -110,7 +109,7 @@ export class AuthService {
                 return await this.account.createSession(email, password);
             }
         } catch (error) {
-            console.error("Appwrite service :: login :: error", error);
+            console.error(" login :: error", error);
             throw error;
         }
     }
@@ -119,8 +118,7 @@ export class AuthService {
         try {
             return await this.account.get();
         } catch (error) {
-            // Unauthenticated state (401) is expected when no active session exists
-            console.log("Appwrite service :: getCurrentUser :: No active user logged in");
+            console.log("getCurrentUser :: No active user logged in");
         }
         return null;
     }
@@ -130,7 +128,7 @@ export class AuthService {
             await this.account.deleteSessions();
             return true;
         } catch (error) {
-            console.error("Appwrite service :: logout :: error", error);
+            console.error("logout :: error", error);
             return false;
         }
     }
