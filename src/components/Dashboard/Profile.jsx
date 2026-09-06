@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 
 const DEFAULT_PROFILE = {
-  name: 'Alex Morgan',
+  name: 'Sanju',
   title: 'Full Stack Developer',
   email: 'alex.morgan@example.com',
   phone: '+1 (555) 234-5678',
