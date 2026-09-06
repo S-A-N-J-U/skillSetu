@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-// Mock student testimonial data
+
 const REVIEWS_DATA = [
   {
     id: 1,
@@ -32,7 +32,7 @@ const REVIEWS_DATA = [
 function Rating() {
   return (
     <section className="py-12 px-4 max-w-7xl mx-auto">
-      {/* Header Section */}
+     
       <div className="w-full text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-3 tracking-tight">
           What Our Students Say
@@ -42,7 +42,6 @@ function Rating() {
         </p>
       </div>
 
-      {/* Cards Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {REVIEWS_DATA.map((review, index) => (
           <motion.div
@@ -55,7 +54,7 @@ function Rating() {
             className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl border border-gray-100 flex flex-col justify-between transition-all duration-300"
           >
             <div>
-              {/* Rating Stars */}
+             
               <div className="flex items-center gap-1 mb-4">
                 {[...Array(review.rating)].map((_, i) => (
                   <span key={i} className="text-amber-400 text-xl select-none">
@@ -64,13 +63,13 @@ function Rating() {
                 ))}
               </div>
 
-              {/* Review Comment */}
+             
               <p className="text-gray-600 text-sm leading-relaxed mb-6 italic">
                 "{review.comment}"
               </p>
             </div>
 
-            {/* Profile Info */}
+          
             <div className="flex items-center gap-4 pt-4 border-t border-gray-100">
               <img
                 src={review.avatar}
