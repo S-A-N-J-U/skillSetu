@@ -102,6 +102,11 @@ function Header() {
       active: authStatus,
     },
     {
+      name: 'Startup',
+      slug: '/startup',
+      active: authStatus,
+    },
+    {
       name: 'Login',
       slug: '/login',
       active: !authStatus,

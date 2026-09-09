@@ -15,6 +15,7 @@ import Post from "./pages/Post.jsx";
 
 import AllPosts from "./pages/AllPosts.jsx";
 import FindJob from './pages/FindJob.jsx'
+import Startup from './pages/Startup.jsx'
 
 const router = createBrowserRouter([
     {
@@ -48,6 +49,15 @@ const router = createBrowserRouter([
                     <AuthLayout authentication>
                         {" "}
                        <FindJob/>
+                    </AuthLayout>
+                ),
+            },
+            {
+                path: "/startup",
+                element: (
+                    <AuthLayout authentication>
+                        {" "}
+                       <Startup/>
                     </AuthLayout>
                 ),
             },
