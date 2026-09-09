@@ -17,10 +17,10 @@ function Startup() {
         'Connecting small-hold farmers directly with tier-2 city distributors, optimizing farm-to-table delivery routes, reducing produce waste, and boosting profits.',
     },
     {
-      title: 'Micro-SaaS for Local Retail Omnichannel Sync',
-      category: 'B2B SAAS / COMMERCE',
+      title: 'Build seaweed',
+      category: 'Clean Technology (CleanTech) & Green Energy',
       description:
-        'A plug-and-play stock & inventory synchronization tool for kirana stores enabling automated billing, local delivery management, and WhatsApp automation.',
+        'Build seaweed-based bio-diesel production hubs to power commercial trucks for scalable, carbon-neutral logistics solutions.',
     },
   ]
 

@@ -175,7 +175,7 @@ export default function Ai() {
 
       {analysis && (
         <div className="space-y-6">
-          {/* Top Bar / Overall Score */}
+        
           <div className="flex flex-col md:flex-row items-center justify-between gap-6 p-8 rounded-2xl bg-white border border-slate-200 shadow-sm">
             <div>
               <span className="text-xs text-indigo-600 font-bold uppercase tracking-wider">Evaluation Complete</span>

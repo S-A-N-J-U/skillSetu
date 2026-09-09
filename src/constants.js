@@ -47,7 +47,7 @@ If this IS a resume, analyze it thoroughly and provide comprehensive feedback in
   ]
 }`;
 
-// Aliased for backwards compatibility if needed
+
 export const ANALYZE_RESUME_PROMPT = AI_SYSTEM_PROMPT;
 
 export const METRIC_CONFIG = [
@@ -93,10 +93,9 @@ export const METRIC_CONFIG = [
   },
 ];
 
-// Aliased to match lowercase metricConfig imports in UI components
 export const metricConfig = METRIC_CONFIG;
 
-// Static list of items for UI layout rendering
+
 export const buildPresenceChecklist = [
   { id: "email", label: "Contact Information & Email" },
   { id: "summarySection", label: "Professional Summary" },
@@ -107,7 +106,7 @@ export const buildPresenceChecklist = [
   { id: "actionVerbs", label: "Action Verbs at Bullet Starts" },
 ];
 
-// Evaluator function if dynamically testing raw resume text in JS
+
 export const evaluatePresenceChecklist = (text) => {
   const hay = (text || "").toLowerCase();
   return [
